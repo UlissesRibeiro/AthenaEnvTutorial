@@ -56,30 +56,30 @@ Esses paths são referente aos *.js , se você abrir cada arquivo .js você ver�
 
 <p>Para exibir apenas um texto na tela, segue um exemplo :
 
-<span style="color:green">//defina uma constante informando a cor do texto, no 
-//exemplo temos a cor vermelho<br></span>
+//defina uma constante informando a cor do texto, no 
+//exemplo temos a cor vermelho<br>
     
     const red_color = Color.new(199,17,17);
 
-<span style="color:green">//para importar uma fonte, é necessário informar o path /fonte
-//criando a variável para isso<br></span>
+//para importar uma fonte, é necessário informar o path /fonte
+//criando a variável para isso<br>
 
     let font_bold = new Font("fonts/LEMONMILK-Bold.otf");
 
-<span style="color:green">//agora para definir a propriedade da cor na font, basta informar
-//a variavel.color = variável_da_cor;<br></span>
+//agora para definir a propriedade da cor na font, basta informar
+//a variavel.color = variável_da_cor;<br>
     
     font_bold.color = red_color;
 
-<span style="color:green">//também é possível definir o tamanho da fonte<br></span>
+//também é possível definir o tamanho da fonte<br>
     
     font_bold.scale = 0.7f;
 
-<span style="color:green">//a partir daqui, dentro desse ciclo, será gerado a imagem na tela<br></span>
+//a partir daqui, dentro desse ciclo, será gerado a imagem na tela<br>
 
     while(true){
 
-<span style="color:green">//informe a variavel que quer exibir seguido de .print(x,y,"texto");<br></span>
+//informe a variável que quer exibir seguido de .print(x,y,"texto");<br>
 
     font_bold.print(15,5, "StarkShell v0.1");
 
@@ -94,21 +94,21 @@ Seu código deve estar parecido com isso :
 <li id="draw_img">Exibir imagem .png na tela, segue o exemplo</li>
 
 <p>Crie a variável<br>
-<span style="color:green">//passando new Image("path/imagem.png");<br></span>
+//passando new Image("path/imagem.png");<br>
         
     let bg = new Image("dash/bg.png");
 
 e passe essa variável dentro do while como
 
-    bg.draw(0,0); <span>//sendo 0,0 referente a x e y<br></span>
+    bg.draw(0,0); <span>//sendo 0,0 referente a x e y<br>
 
 <li id="play_audio">Adicionando som de fundo</li>   
-    <span style="color:green">//pode ser passado for do while</span>
+    //pode ser passado for do while
     
     var track = Sound.load("sounds/seu_audio.wav");
     var duration = Sound.duration(track);
     Sound.play(track);
-<span style="color:green">//caso queria que a musica fique em loop</span><br>
+//caso queria que a musica fique em loop<br>
     
     Sound.repeat(true); 
 <br>
