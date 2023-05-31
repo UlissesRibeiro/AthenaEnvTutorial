@@ -1,15 +1,4 @@
-<style>
-    h2{
-        text-align:center;
-    }
-    h1{
-        text-align:center
-    }
-    span{
-        color:green;
-    }
-</style>
-<h1>Tutorial AthenaEnv</h1>
+<h1 align=center>Tutorial AthenaEnv</h1>
 
 <details open="open">
   <summary>Índice</summary>
@@ -30,12 +19,12 @@
   </ol>
 </details>
 
-<h2 id="about_ae">O que é o AthenaEnv?</h2>
+<h2 id="about_ae" align=center>O que é o AthenaEnv?</h2>
 
 <p>AthenaEnv é um projeto que busca facilitar e ao mesmo tempo trazer um kit completo para os usuários criarem um software homebrew para PlayStation 2 utilizando a linguagem JavaScript. Possui dezenas de funções integradas, tanto para criar jogos quanto para aplicativos. A principal vantagem em usar o projeto AthenaEnv ao invés do PS2SDK puro é acima de tudo a praticidade, você vai usar uma das linguagens mais simples possíveis para criar o que tem em mente, além de não precisar compilar, apenas script e testar, rápido e simples.</p>
 <i>Texto acima foi retirado da documentação oficial</i>
 <hr>
-<h2 id="how_to_use">Como utilizar o AthenaEnv.</h2>
+<h2 id="how_to_use" align=center>Como utilizar o AthenaEnv.</h2>
 
 <p>Essa documentação foi criada com base na documentação oficial do <b>AthenaEnv</b>, que você encontra <a href="https://github.com/DanielSant0s/AthenaEnv">aqui</a>,projeto esse criado pelo <a href="https://github.com/DanielSant0s">DanielSan0s</a>, tendo em vista que assistindo ao video de demonstração nos comentários tinha alguns usuários querendo que fosse explicado de forma mais prática ou um passo-a-passo.<br>
 Como é dito na documentação oficial, é desejável um prévio conhecimento em JavaScript.</p>
@@ -67,30 +56,31 @@ Esses paths são referente aos *.js , se você abrir cada arquivo .js você ver�
 
 <p>Para exibir apenas um texto na tela, segue um exemplo :
 
-<span>//defina uma constante informando a cor do texto, no 
+<span style="color:green">//defina uma constante informando a cor do texto, no 
 //exemplo temos a cor vermelho<br></span>
     
     const red_color = Color.new(199,17,17);
 
-<span>//para importar uma fonte, é necessário informar o path /fonte
+<span style="color:green">//para importar uma fonte, é necessário informar o path /fonte
 //criando a variável para isso<br></span>
 
     let font_bold = new Font("fonts/LEMONMILK-Bold.otf");
 
-<span>//agora para definir a propriedade da cor na font, basta informar
+<span style="color:green">//agora para definir a propriedade da cor na font, basta informar
 //a variavel.color = variável_da_cor;<br></span>
     
     font_bold.color = red_color;
 
-<span>//também é possível definir o tamanho da fonte<br></span>
+<span style="color:green">//também é possível definir o tamanho da fonte<br></span>
     
     font_bold.scale = 0.7f;
 
-<span>//a partir daqui, dentro desse ciclo, será gerado a imagem na tela<br></span>
+<span style="color:green">//a partir daqui, dentro desse ciclo, será gerado a imagem na tela<br></span>
 
     while(true){
 
-    <span>//informe a variavel que quer exibir seguido de .print(x,y,"texto");<br></span>
+<span style="color:green">//informe a variavel que quer exibir seguido de .print(x,y,"texto");<br></span>
+
     font_bold.print(15,5, "StarkShell v0.1");
 
     Screen.flip();
@@ -104,7 +94,7 @@ Seu código deve estar parecido com isso :
 <li id="draw_img">Exibir imagem .png na tela, segue o exemplo</li>
 
 <p>Crie a variável<br>
-<span>//passando new Image("path/imagem.png");<br></span>
+<span style="color:green">//passando new Image("path/imagem.png");<br></span>
         
     let bg = new Image("dash/bg.png");
 
@@ -113,12 +103,12 @@ e passe essa variável dentro do while como
     bg.draw(0,0); <span>//sendo 0,0 referente a x e y<br></span>
 
 <li id="play_audio">Adicionando som de fundo</li>   
-    <span>//pode ser passado for do while</span>
+    <span style="color:green">//pode ser passado for do while</span>
     
     var track = Sound.load("sounds/seu_audio.wav");
     var duration = Sound.duration(track);
     Sound.play(track);
-<span>//caso queria que a musica fique em loop</span><br>
+<span style="color:green">//caso queria que a musica fique em loop</span><br>
     
     Sound.repeat(true); 
 <br>
